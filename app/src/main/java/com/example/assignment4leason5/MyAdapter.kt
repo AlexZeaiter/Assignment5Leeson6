@@ -34,7 +34,6 @@ class MyAdapter (var plist: ArrayList<Product>) : RecyclerView.Adapter<MyAdapter
             val intent = Intent(context, ProductDetails::class.java)
 
             var res = plist[position]
-            Toast.makeText(context," $res clicked", Toast.LENGTH_LONG).show()
             intent.putExtra("image", resID)
             intent.putExtra("title", plist[position].Title)
             intent.putExtra("price", plist[position].price.toString())
