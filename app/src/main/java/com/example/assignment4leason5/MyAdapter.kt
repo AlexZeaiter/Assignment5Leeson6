@@ -26,9 +26,10 @@ class MyAdapter (var plist: ArrayList<Product>) : RecyclerView.Adapter<MyAdapter
             context.packageName
         )
         holder.itemView.imageView.setImageResource(resID)
-        holder.itemView.name.text = plist[position].Title
-        holder.itemView.price.text = plist[position].price.toString()
-        holder.itemView.color.text = plist[position].color
+
+        holder.itemView.name.text = "Name :" + plist[position].Title
+        holder.itemView.price.text = "Price :" + plist[position].price.toString() + "$"
+        holder.itemView.color.text = "Color :" + plist[position].color
         holder.itemView.playout.setOnClickListener{
             val intent = Intent(context, ProductDetails::class.java)
 

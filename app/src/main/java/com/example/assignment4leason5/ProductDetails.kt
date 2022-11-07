@@ -11,15 +11,15 @@ class ProductDetails : AppCompatActivity() {
 
         if(intent.hasExtra("image") && intent.hasExtra("title")&& intent.hasExtra("price")&& intent.hasExtra("color")&& intent.hasExtra("desc")){
             var ig =intent.getIntExtra("image",0)
-            var t1 = intent.getStringExtra("title")
-            var t2 = intent.getStringExtra("desc")
-            var t3 = intent.getStringExtra("price")
-            var t4 = intent.getStringExtra("color")
+            var t1 = intent.getStringExtra("title").toString()
+            var t2 = intent.getStringExtra("desc").toString()
+            var t3 = intent.getStringExtra("price").toString()
+            var t4 = intent.getStringExtra("color").toString()
 
-            name.text = t1.toString()
-            desc.text = t2.toString()
-            price.text = t3.toString()
-            color.text = t4.toString()
+            name.text = "Name : $t1"
+            desc.text = "Description : $t2"
+            price.text = "Price : $t3$"
+            color.text = "Color : $t4"
             imageView.setImageResource(ig)
         }
 

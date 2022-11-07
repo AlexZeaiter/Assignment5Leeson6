@@ -31,7 +31,6 @@ class ShoppingCategory : AppCompatActivity() {
     fun click(view: View) {
         when (view.id) {
             R.id.electronics -> {
-                Toast.makeText(this, "You have chosen Electronics", Toast.LENGTH_LONG).show()
                 var intent = Intent(this, ProductList::class.java)
                 intent.putExtra("productlist", list.toString())
                 startActivity(intent)
