@@ -42,7 +42,6 @@ class MyAdapter (var plist: ArrayList<Product>) : RecyclerView.Adapter<MyAdapter
             context.startActivity(intent)
         }
     }
-    // return Size of the list of data.
     override fun getItemCount(): Int {
         return plist.size
     }

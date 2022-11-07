@@ -14,12 +14,6 @@ class ProductList : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_product_list)
 
-        /*val sintent = intent
-        var productlist = sintent.getStringExtra("productlist")
-
-        var list = productlist as Array<Product>
-        // Drawable Resource id
-        val adapter = MyAdapter(list)*/
 
         var list = ArrayList<Product>()
         var macbook = Product("Mac Book", 20.00,"Black", "macbook", "1", "Testing Mac Book Desc")

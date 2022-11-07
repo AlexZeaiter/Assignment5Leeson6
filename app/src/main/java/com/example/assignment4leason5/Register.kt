@@ -30,16 +30,9 @@ class Register : AppCompatActivity() {
 
                 var rintent = intent
 
-                //rintent.data = Uri.parse(user.toString())
-                //testing the return here
                 rintent.data = Uri.parse("tEST tEXT")
                 setResult(Activity.RESULT_OK, rintent)
 
-                /*Toast.makeText(
-                    this,
-                    "Your Account Has Been Created Successfully",
-                    Toast.LENGTH_LONG
-                ).show()*/
 
                 finish()
             }
